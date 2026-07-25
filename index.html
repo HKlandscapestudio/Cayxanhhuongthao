@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Kim Landscape Studio | Cinematic Experience</title>
+    <meta name="description" content="Hoàng Kim Landscape Design Studio - Đẹp ngay hôm nay, bền nhiều năm sau.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="loading">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-logo">HOÀNG KIM</div>
+        <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Main Background Image with Parallax/Tilt -->
+    <div class="bg-image-wrapper" id="bg-wrapper">
+        <div class="bg-image" style="background-image: url('hero_landscape.png');"></div>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="vfx-nav">
+        <div class="logo-container magnetic" data-strength="20">
+            <a href="#" class="logo-link">
+                <i class="fa-solid fa-leaf text-gold"></i>
+                <div class="logo-text">
+                    <span class="logo-main">HOÀNG KIM</span>
+                    <span class="logo-sub">LANDSCAPE STUDIO</span>
+                </div>
+            </a>
+        </div>
+        <div class="contact-btn-container magnetic" data-strength="50">
+            <button class="btn-contact" id="contact-toggle">Liên Hệ</button>
+        </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <main class="vfx-hero">
+        <div class="hero-content-wrapper" id="tilt-content">
+            <h1 class="hero-title">
+                <span class="line"><span class="word">ĐẸP</span> <span class="word">NGAY</span> <span class="word">HÔM</span> <span class="word">NAY,</span></span>
+                <br>
+                <span class="line text-gold"><span class="word">BỀN</span> <span class="word">NHIỀU</span> <span class="word">NĂM</span> <span class="word">SAU.</span></span>
+            </h1>
+            
+            <div class="hero-services">
+                <div class="service-item">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span>THIẾT KẾ</span>
+                </div>
+                <div class="divider"></div>
+                <div class="service-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>THI CÔNG</span>
+                </div>
+                <div class="divider"></div>
+                <div class="service-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>BỀN VỮNG</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Overlay -->
+    <div class="contact-overlay" id="contact-overlay">
+        <div class="contact-close magnetic" id="contact-close" data-strength="30">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="contact-content">
+            <h2 class="contact-title">Kết nối với chúng tôi</h2>
+            <div class="contact-info-blocks">
+                <div class="info-block hover-target">
+                    <i class="fa-solid fa-phone text-gold"></i>
+                    <p>09845.2345.1</p>
+                </div>
+                <div class="info-block hover-target">
+                    <i class="fa-solid fa-envelope text-gold"></i>
+                    <p>Hoangkimlanescape studio@gmail.com</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link hover-target"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-link hover-target"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
